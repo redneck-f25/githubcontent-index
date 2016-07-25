@@ -7,7 +7,7 @@ var pathsplit = location.pathname.split( '/' ).slice( -4 );
 if ( location.host !== myhostname && pathsplit.shift() === myusername ) {
     top.location.replace( 'https://' + myhostname + '/githubcontent/' + pathsplit.join( '/' ) );
 }
-var script = document.getElementById('boot_script');
+var script = document.getElementById('githubcontent_script');
 script.parentElement.removeChild(script);
 
 })();
